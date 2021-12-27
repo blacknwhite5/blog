@@ -1,0 +1,10 @@
+baseURL = "https://blacknwhite5.github.io/"
+languageCode = "en-us"
+title = "Jackdaw's Devlog"
+
+theme = "hugo-PaperMod"
+paginate = 7
+canonifyurls = true
+
+[permalinks]
+  post = "/:year/:month/:slug/"
