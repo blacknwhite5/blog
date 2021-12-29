@@ -1,0 +1,50 @@
+baseURL: 'https://blacknwhite5.github.io/'
+languageCode: en-us
+title: jackdaw@blog ~/home
+theme: hugo-PaperMod
+paginate: 7
+canonifyurls: true
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+permalinks:
+  post: '/:year/:month/:slug/'
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+languages:
+  en:
+    languageName: English
+    weight: 1
+    menu:
+      main:
+        - name: Archive
+          url: archives
+          weight: 10
+        - name: Categories
+          url: categories/
+          weight: 10
+        - name: Search
+          url: search/
+          weight: 10
+        - name: Tags
+          url: tags/
+          weight: 10
+params:
+  profileMode:
+    enabled: true
+    title: 갈까마귀의 연구개발 일상
+    subtitle: 까아까악
+    imageUrl: images/logo_jackdaw.png
+    imageWidth: 180
+    imageHeight: 180
+  socialIcons:
+    - name: Github
+      url: 'https://github.com/blacknwhite5'
+    - name: email
+      url: 'mailto:blacknwhite5@naver.com'
