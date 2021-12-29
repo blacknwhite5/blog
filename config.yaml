@@ -4,19 +4,26 @@ title: jackdaw@blog ~/home
 theme: hugo-PaperMod
 paginate: 7
 canonifyurls: true
+
 enableInlineShortcodes: true
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
 enableEmoji: true
+
+minify:
+    disableXML: true
+
 permalinks:
   post: '/:year/:month/:slug/'
+
 outputs:
   home:
     - HTML
     - RSS
     - JSON
+
 languages:
   en:
     languageName: English
@@ -35,6 +42,7 @@ languages:
         - name: Tags
           url: tags/
           weight: 10
+
 params:
   profileMode:
     enabled: true
@@ -43,8 +51,60 @@ params:
     imageUrl: images/logo_jackdaw.png
     imageWidth: 180
     imageHeight: 180
+
+    author: Moohyun-Oh
+    defaultTheme: auto
+    # disableThemeToggle: true
+    ShowShareButtons: true
+    ShowReadingTime: true
+    # disableSpecial1stPost: true
+    displayFullLangName: true
+    ShowPostNavLinks: true
+    ShowBreadCrumbs: true
+    ShowCodeCopyButtons: true
+    ShowToc: true
+
+  comments: true
+
   socialIcons:
     - name: Github
       url: 'https://github.com/blacknwhite5'
     - name: email
       url: 'mailto:blacknwhite5@naver.com'
+
+
+markup:
+    goldmark:
+        renderer:
+            unsafe: true
+#     highlight:
+#         # anchorLineNos: true
+#         codeFences: true
+#         guessSyntax: true
+#         lineNos: true
+#         # noClasses: false
+#         style: monokai
+
+privacy:
+    vimeo:
+        disabled: false
+        simple: true
+
+    twitter:
+        disabled: false
+        enableDNT: true
+        simple: true
+
+    instagram:
+        disabled: false
+        simple: true
+
+    youtube:
+        disabled: false
+        privacyEnhanced: true
+
+services:
+    instagram:
+        disableInlineCSS: true
+    twitter:
+        disableInlineCSS: true
