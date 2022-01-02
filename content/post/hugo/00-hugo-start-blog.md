@@ -260,7 +260,7 @@ date: 2022-01-02T01:04:18+09:00
 ```
 
 쓸 내용을 완성하면, 
-[배포](https://blacknwhite5.github.io/2021/12/hugo%EB%A1%9C-%EC%8B%9C%EC%9E%91%ED%95%98%EB%8A%94-github-pages-%EB%B8%94%EB%A1%9C%EA%B7%B8/#-%EB%B0%B0%ED%8F%AC)에 설명한 방법으로 배포하면 된다. 
+[배포](#-배포)에 설명한 방법으로 배포하면 된다. 
 
 <br>
 
